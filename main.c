@@ -18,7 +18,7 @@ int main(int ac, char **av)
 	int a, op_code_found, cmp_result;
 	/* ssize_t text; */
 
-	if (ac != 2 || av[1] == NULL)
+	if (ac != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);

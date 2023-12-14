@@ -5,10 +5,11 @@
  */
 void push(stack_t **stack, unsigned int line_number)
 {
-	char item[BUFFER_SIZE];
+	char *item;
 	int input;
 	stack_t *new_node;
 
+	item = strtok(NULL, " \n\t\r");
 	if (item == NULL)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
